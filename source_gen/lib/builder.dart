@@ -136,9 +136,9 @@ class CombiningBuilder implements Builder {
 
     final ignoreForFile = _ignoreForFile.isEmpty
         ? ''
-        : '\n// ignore_for_file: ${_ignoreForFile.join(', ')}\n';
+        : '\n// ignore_for_file: ${_ignoreForFile.join(', ')}';
 
-    final preamble = _preamble.isEmpty ? '' : '\n$_preamble\n';
+    final preamble = _preamble.isEmpty ? '' : '\n$_preamble';
 
     final output = '''
 $defaultFileHeader
